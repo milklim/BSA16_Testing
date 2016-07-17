@@ -12,7 +12,11 @@ namespace Logic
             _data = new List<int>(capacity);
         }
 
-        public int ItemsCount => _data?.Count ?? 0;
+        //public int ItemsCount => _data?.Count ?? 0;
+        public int ItemsCount
+        {
+            get { return this._data.Count; }
+        }
 
         public void AddItem(int a)
         {
@@ -43,5 +47,6 @@ namespace Logic
         {
             return _data.Max();
         }
+
     }
 }
