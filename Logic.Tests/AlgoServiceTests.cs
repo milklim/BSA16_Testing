@@ -6,7 +6,7 @@ using System.Linq;
 namespace Logic.Tests
 {
     [TestFixture]
-    class AlgoServiceTests
+    public class AlgoServiceTests
     {
         IAlgoService algService;
 
